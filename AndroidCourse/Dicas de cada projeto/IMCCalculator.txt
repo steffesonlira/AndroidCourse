@@ -1,0 +1,12 @@
+Importantes funções.
+
+
+- Calculo com  float
+
+- Uso de ifs
+
+- Masked Txt
+
+- Arredondar numeros float
+
+- trocar valores dos textviews

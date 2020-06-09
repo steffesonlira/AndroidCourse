@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Par Ou Ímpar</string>
+    <string name="label_jogador">Jogador</string>
+    <string name="label_maquina">Máquina</string>
+    <string name="label_odd">Impar</string>
+    <string name="label_even">Par</string>
+    <string name="label_winner">Você Venceu!</string>
+    <string name="label_choose">Escolha da Máquina</string>
+    <string name="par_ou_mpar">Par ou Ímpar</string>
+    <string name="winner_label">Você Venceu!</string>
+    <string name="looser_label">Voce Perdeu!</string>
+</resources>

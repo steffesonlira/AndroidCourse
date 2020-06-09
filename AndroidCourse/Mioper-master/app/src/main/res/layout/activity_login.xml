@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <!-- Layout Scroll para rolagem de tela -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewId"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_logo"
+    android:fitsSystemWindows="true">
+        <!-- Layout Linear Organizando EditTexts e Botões na tela -->
+    <LinearLayout
+        android:id="@+id/linearLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
+
+        <!-- Logo Mioper -->
+        <ImageView
+            android:id="@+id/imgLogoId"
+            android:layout_width="258dp"
+            android:layout_height="129dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/esquecisenhalogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Label Email -->
+        <!-- Views usadas para realizar a separação entre os botões -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="12"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_user"
+            android:layout_width="match_parent"
+            android:hint="E-mail:"
+            android:textColorHint="#FFFFFF"
+            android:layout_height="wrap_content">
+
+         <!-- Edit Text  E-mail -->
+            <EditText
+                android:id="@+id/edtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_email"
+                android:backgroundTint="@android:color/white"
+                android:drawableTint="@color/DarkCyan"
+                android:drawableTintMode="src_in"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/background_light"
+                android:textColorHighlight="#C5C1C1"
+                android:textCursorDrawable="@color/design_default_color_primary_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Label Senha -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="12"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:hint="Senha:"
+            android:textColorHint="#FFFFFF"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/DarkCyan"
+            >
+         <!-- Edit Text  E-mail -->
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/ic_pass"
+                android:layout_height="match_parent"
+                android:drawableTint="@color/DarkCyan"
+                android:backgroundTint="@android:color/white"
+                android:inputType="textPassword"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/background_light" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="12"/>
+
+        <!-- Botão Login -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/botao"
+            android:padding="8dp"
+            android:text="Acessar"
+            android:textScaleX="1"
+            android:textColor="@color/White"
+            android:textAlignment="center"
+            android:onClick="validarLoginUsuario"
+            android:textSize="24sp" />
+
+
+        <!-- Esquema de Layout  que será usado futuramente com botões de Login Face e Google -->
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Não tem uma conta ? Clique AQUI para se tornar um Mioper"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="16dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.385" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="136dp">
+
+            <!--Label Criar Conta -->
+
+
+            <!-- Label Esqueci a Senha -->
+            <TextView
+                android:id="@+id/txtEsqueciSenhaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="Esqueceu a senha ? Clique AQUI  para recuperá-la"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#3F51B5"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textAllCaps="false" />
+
+
+            <!-- Será usado futuramente Login Face + Google -->
+            <!--                android:id="@+id/login_google"-->
+            <!--                android:layout_width="258dp"-->
+            <!--                android:layout_height="38dp"-->
+            <!--                android:layout_marginStart="29dp"-->
+            <!--                android:layout_marginTop="26dp"-->
+            <!--                android:layout_marginEnd="29dp"-->
+            <!--                android:layout_marginBottom="20dp"-->
+            <!--                android:drawableLeft="@drawable/googleg_standard_color_18"-->
+            <!--                android:text="Continue with Google"-->
+            <!--                android:textSize="10sp"-->
+            <!--                app:layout_constraintBottom_toTopOf="@+id/login_face"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintHorizontal_bias="0.489"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--            <com.facebook.login.widget.LoginButton-->
+            <!--                android:id="@+id/login_face"-->
+            <!--                android:layout_width="250dp"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginStart="29dp"-->
+            <!--                android:layout_marginEnd="29dp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintHorizontal_bias="0.5"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/login_google" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

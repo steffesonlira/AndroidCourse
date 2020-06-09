@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Passageiro">
+
+
+
+
+    <include layout="@layout/content_passageiro" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="16dp"
+        android:background="#F1F1F1"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/editDestino"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#F1F1F1"
+            android:drawableLeft="@drawable/circulo_verde"
+            android:drawablePadding="6dp"
+            android:drawableTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Digite seu destino (Ex: Nome da rua, cidade)"
+            android:inputType="textPersonName"
+            android:textColor="#424242"
+            android:textColorHint="#757575"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonChamarUber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/botao"
+        android:layout_gravity="bottom"
+        android:text="Solicitar Mioper"
+        android:onClick="chamarUber"
+        android:theme="@style/botaoPadrao" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

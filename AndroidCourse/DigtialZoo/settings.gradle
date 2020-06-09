@@ -1,0 +1,2 @@
+rootProject.name='Digtial Zoo'
+include ':app'

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_visit_card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_green_light"
+        android:layout_margin="8dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/image_visti_card"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jackie"/>
+
+        <LinearLayout
+            android:id="@+id/linear_text_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/image_visti_card"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:text="Jackie Chan" />
+
+             <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="jackie@email.com" />
+
+            <TextView
+                android:id="@+id/text_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="Ator" />
+
+            <TextView
+                android:id="@+id/text_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:text="Lutador profissionl sem dublê que realiza suas próprias encenações." />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

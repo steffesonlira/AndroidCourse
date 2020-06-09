@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    tools:context=".UserDetailFragment">
+
+    <TextView
+        android:id="@+id/textView_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="30sp"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/textView_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="30sp"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/textView_user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="30sp"
+        tools:text="@tools:sample/first_names" />
+
+</LinearLayout>

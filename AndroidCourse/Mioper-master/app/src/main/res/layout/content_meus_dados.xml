@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MeusDados">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="120dp"
+                android:layout_height="168dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo" />
+
+            <!-- Name Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/txtNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:hint="Nome"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/White"
+                    android:textColorHighlight="#C5C1C1"
+                    android:textColorHint="#FFFFFF"
+                    android:textCursorDrawable="@color/DarkCyan" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Address Label -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/txtEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:hint="Endereço Residencial"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/White"
+                    android:textColorHighlight="#C5C1C1"
+                    android:textCursorDrawable="@color/DarkCyan" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--  Email Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#9A9A9A"
+                    android:textColorHighlight="#C5C1C1"
+                    android:textCursorDrawable="@color/DarkCyan" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+           <!-- mobile number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/txtCelular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:hint="Celular"
+                    android:inputType="number"
+                    android:textColor="@color/White"
+                    android:textColorHighlight="#C5C1C1"
+                    android:textCursorDrawable="@color/DarkCyan" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <!-- Data de Nascimento -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/txtDataNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:hint="Data de Nascimento"
+                    android:inputType="date"
+                    android:textColor="@color/White"
+                    android:textColorHighlight="#C5C1C1"
+                    android:textCursorDrawable="@color/DarkCyan" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- CPF -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/txtCpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:hint="CPF"
+                    android:inputType="number"
+                    android:textColor="@color/White"
+                    android:textColorHighlight="#C5C1C1"
+                    android:textCursorDrawable="@color/DarkCyan" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Gênero -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtFeminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Masculino"
+                    android:textColor="#009688" />
+
+            <Switch
+                android:id="@+id/switchGenero"
+                android:thumbTint="#009688"
+                android:trackTint="@color/White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:splitTrack="false"/>
+
+                <TextView
+                    android:id="@+id/txtMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino"
+                    android:textColor="@color/White" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- Botão Salvar Alterações -->
+            <Button
+                android:id="@+id/btnSalvarAlteracoes"
+                android:layout_width="300dp"
+                android:background="@drawable/botao"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_salvar_alteracoes"
+                android:padding="15dp"
+                android:onClick="salvarAlteracoes"
+                android:textColorHighlight="#C5C1C1"
+                android:textColor="@android:color/white"
+                android:text="Salvar Alterações" />
+
+            <!-- Botão Alterar Senha -->
+            <Button
+                android:id="@+id/btnAlterarSenha"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:onClick="alterarSenhaUsuario"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/ic_altera_senha"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/botao"
+                android:text="Alterar Senha" />
+
+            <Button
+                android:id="@+id/btnExcluirConta"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/ic_deleta_conta"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:onClick="excluirUsuario"
+                android:background="@drawable/botao"
+                android:text="Excluir Conta" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

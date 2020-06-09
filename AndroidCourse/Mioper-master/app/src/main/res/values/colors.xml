@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F44B6</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#333399</color>
+    <color name="DarkBlue">#00008B</color>
+    <color name="DarkCyan">#008B8B	</color>
+    <color name="White">#FFFFFF</color>
+    <color name="com_facebook_button_background_color_focused_disabled">#3C5A99</color>
+    <color name="com_facebook_button_background_color_focused">#3C5A99</color>
+    <color name="com_facebook_button_border_color_focused">#3C5A99</color>
+    <color name="Red">#B22222</color>
+    <color name="Blue">#4682B4</color>
+    <color name="Blue2">#B0BFED</color>
+    <color name="colorLightRed">#F85F62</color>
+    <color name="colorText">#666666</color>
+    <color name="colorLightGrey">#AAAAAA</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent2">#cccccc</color>
+
+    <!--Colors buttons custom -->
+    <color name="Shadow">#4747d1</color>
+    <color name="Shadow_1">#3333cc</color>
+    <color name="Shadow_2">#24248f</color>
+    <color name="Black">#000000</color>
+    <color name="Blue_escuro">#191966</color>
+
+    <!-- Colors Alert Dialog -->
+    <color name="colorPrimary2">#008577</color>
+    <color name="colorPrimaryDark2">#005748</color>
+    <color name="colorAccent2">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSuccess">#4BB543</color>
+    <color name="colorWarning">#FFCC00</color>
+    <color name="colorNatural">#434343</color>
+    <color name="colorError">#CC0000</color>
+    <color name="colorTextPrimary">#212121</color>
+
+
+
+
+</resources>
